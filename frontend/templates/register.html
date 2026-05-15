@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | OTP.CORE</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="form-page">
+    <nav class="navbar">
+        <div class="logo">
+            <a href = "/">OTP.CORE</a></div>
+        <div class="nav-links">
+            <a href="/login">Login</a>
+            <a href="/register" class="signup">Get Started</a>
+        </div>
+    </nav>
+    <div class="form-container glass">
+        <h2>Get Started</h2>
+        <p>Create an account to start using the OTP service.</p>
+
+        <form method="POST" action="/register">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="btn primary" style="width: 100%;">Create Account</button>
+        </form>
+
+        <!-- {% if error or msg %}
+            <div class="msg {{ 'success' if msg else 'error' }}">
+                {{ error or msg }}
+            </div>
+        {% endif %} -->
+
+        <p style="margin-top: 2rem; font-size: 0.9rem;">
+            Already have an account? <a href="/login" style="color: var(--primary); text-decoration: none; font-weight: 600;">Login</a>
+        </p>
+    </div>
+</body>
+</html>

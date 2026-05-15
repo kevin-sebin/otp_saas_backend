@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | OTP.CORE</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="form-page">
+    <nav class="navbar">
+        <div class="logo">
+            <a href = "/">OTP.CORE</a></div>
+        <div class="nav-links">
+            <a href="/login">Login</a>
+            <a href="/register" class="signup">Get Started</a>
+        </div>
+    </nav>
+    <div class="form-container glass">
+        <h2>Welcome Back</h2>
+        <p>Enter your credentials to access your dashboard.</p>
+
+        <form method="POST" action="/login">
+            <div class="input-group">
+                <label>Email Address</label>
+                <input name="email" type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input name="password" type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn primary" style="width: 100%;">Sign In</button>
+        </form>
+
+        {% if msg or error %}
+            <div class="msg error">
+                {{ msg or error }}
+            </div>
+        {% endif %}
+
+        <p style="margin-top: 2rem; font-size: 0.9rem;">
+            Don't have an account? <a href="/register" style="color: var(--primary); text-decoration: none; font-weight: 600;">Sign up</a>
+        </p>
+    </div>
+</body>
+</html>

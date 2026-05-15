@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Service | Fast & Secure Verification</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="description" content="Secure and fast OTP generation and verification API for modern developers.">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">OTP.CORE</div>
+        <div class="nav-links">
+            {% if logged_in %}
+                <a href="/dashboard" class="signup">Dashboard</a>
+            {% else %}
+                <a href="/login">Login</a>
+                <a href="/register" class="signup">Get Started</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Secure OTPs for <br><span style="background: linear-gradient(to right, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Your Application</span></h1>
+        <p>A high-performance API for generating and verifying One-Time Passwords. Simple integration, lightning fast delivery.</p>
+
+        <div class="buttons">
+            {% if logged_in %}
+                <a href="/dashboard" class="btn primary">Go to Dashboard</a>
+            {% else %}
+                <a href="/register" class="btn primary">Start Building</a>
+            {% endif %}
+            <a href="/docs" class="btn secondary">Read Docs</a>
+        </div>
+
+        <img src="/static/hero.png" alt="Secure Verification Illustration" class="hero-img">
+    </header>
+
+    <section class="features">
+        <div class="card glass">
+            <h3>⚡ Ultra Fast</h3>
+            <p>Built on top of FastAPI for minimal latency and maximum throughput. Deliver OTPs in milliseconds.</p>
+        </div>
+
+        <div class="card glass">
+            <h3>🔐 Secure by Design</h3>
+            <p>Industry-standard encryption and secure API keys ensure your verification flow remains uncompromised.</p>
+        </div>
+
+        <div class="card glass">
+            <h3>📦 Easy Integration</h3>
+            <p>A simple RESTful API that works with any language. Integrate in minutes, not hours.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem;">
+        &copy; 2026 OTP.CORE. All rights reserved.
+    </footer>
+</body>
+</html>
