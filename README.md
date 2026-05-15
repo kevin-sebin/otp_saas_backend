@@ -133,10 +133,6 @@ Verifies the provided OTP for the given email.
 3. In the **Dashboard**, you can copy your unique `API Key`.
 4. Head to **Settings** to customize the appearance and content of the OTP emails sent to your users.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
