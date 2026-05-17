@@ -5,12 +5,12 @@ A scalable, API-first One-Time Password (OTP) generation and verification servic
 ## 🚀 Features
 
 - **Developer Dashboard**: Register, login, and manage your API keys and service settings.
-! [demo screenshot](screenshots/Screenshot%202026-05-18%20013553.png)
-! [demo screenshot](screenshots/Screenshot%202026-05-18%20013625.png)
+![demo screenshot](screenshots/Screenshot%202026-05-18%20013553.png)
+![demo screenshot](screenshots/Screenshot%202026-05-18%20013625.png)
 - **API Key Authentication**: Secure all API endpoints using a randomly generated `x-api-key`.
-! [demo screenshot](screenshots/Screenshot%202026-05-18%20013750.png)
+![demo screenshot](screenshots/Screenshot%202026-05-18%20013750.png)
 - **Customizable Emails**: Modify the organization name, email subject, support email, and footer text sent to your end users.
-! [demo screenshot](screenshots/Screenshot%202026-05-18%20013809.png)
+![demo screenshot](screenshots/Screenshot%202026-05-18%20013809.png)
 - **OTP Generation & Delivery**: Generates a secure 6-digit OTP and sends it reliably via SMTP (Gmail).
 - **OTP Verification**: Simple API endpoint to verify if the provided OTP is correct.
 - **Security**: Argon2 password hashing for user accounts and secure OTP handling.
