@@ -1,6 +1,8 @@
 import os
 import secrets
 import smtplib
+import random
+from colors import dark_colors
 from fastapi import FastAPI, Depends, Request, Form, Header, HTTPException
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -65,6 +67,7 @@ def send_email(rec_email, otp, settings=None):
         email_subject = settings.email_subject
         support_email = settings.support_email
         footer_text = settings.footer_text
+    colors = random.choices(dark_colors)[0]
     html_content = f"""
     <div style="
         font-family: Arial;
@@ -72,7 +75,7 @@ def send_email(rec_email, otp, settings=None):
         margin: auto;
         padding: 30px;
         border-radius: 12px;
-        background: #0f172a;
+        background: {colors};
         color: white;
     ">
         <h1>{org_name}</h1>
